@@ -46,3 +46,31 @@
   align-items: center;
   gap: 20px;
 }
+
+.button {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges; /* untuk kompatibilitas browser */
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-2px) rotate(5deg); }
+  50% { transform: translateY(0) rotate(-5deg); }
+  75% { transform: translateY(-2px) rotate(5deg); }
+}
+
+.wiggle {
+  animation: wiggle 0.3s ease-in-out infinite;
+}
+
+
