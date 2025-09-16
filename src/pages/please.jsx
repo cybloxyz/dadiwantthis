@@ -15,7 +15,7 @@ import "../please.css";
 
 const Dadplease = () => {
   const [text, setText] = useState("");
-  const fullText = "dad i am not forcing but could you give me something please? <3";
+  const fullText = "i am not forcing but could you give me something please? <3";
   const fullText1 = "Hope List";
   const fullText2 = "Click the items to know each detail!";
   const [showButton, setShowButton] = useState(false);
