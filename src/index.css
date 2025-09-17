@@ -10,7 +10,7 @@
 
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: system-ui, Avenir, Minecraft Regular, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -35,9 +35,7 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  width: 100%;
   min-height: 100vh;
 }
 
@@ -94,9 +92,30 @@ body {
   font-family: "Minecraft Regular", sans-serif;
 }
 
-.minecraft-text {
-  font-family: "Minecraft", sans-serif;
+.minecraft-text1 {
+  font-family: "Minecraft Regular", sans-serif;
   font-size: 40px;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+.minecraft-p {
+  font-family: "Minecraft Regular", sans-serif;
+  font-size: 36px;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+.minecraft-text {
+  font-family: "Minecraft Regular", sans-serif;
+  font-size: 42px;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+.minecraft-p2 {
+  font-family: "Minecraft Regular", sans-serif;
+  font-size: 26px;
   color: white;
   text-shadow: 2px 2px 4px black;
 }
@@ -116,7 +135,26 @@ body {
 }
 
 .default-bg {
-  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    #cddafd,
+    #d2deff,
+    #ffc1d8,
+    #ffc8dd,
+    #ffc8dd,
+    #cdb4db
+  );
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.default-bg1 {
+  min-height: 100vh;
+  width: 100%;
   background: linear-gradient(
     180deg,
     #cddafd,
@@ -131,4 +169,52 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+.img-hover {
+  transition: box-shadow 0.3s ease; /* smooth effect */
+}
+
+.img-hover:hover {
+  box-shadow: 0 5px 20px rgba(25, 140, 155, 0.849); /* bayangan muncul saat hover */
+}
+
+
+.img-hover2 {
+  transition: box-shadow 0.3s ease; /* smooth effect */
+}
+
+.img-hover2:hover {
+  box-shadow: 0 5px 20px rgba(155, 25, 97, 0.849); /* bayangan muncul saat hover */
+}
+
+.img-hover3 {
+  transition: box-shadow 0.3s ease; /* smooth effect */
+}
+
+.img-hover3:hover {
+  box-shadow: 0 5px 20px rgba(140, 25, 155, 0.849); /* bayangan muncul saat hover */
+}
+
+@media (max-width: 768px) {
+  .minecraft-text {
+  font-family: "Minecraft Regular", sans-serif;
+  font-size: 24px;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+.minecraft-p {
+  font-family: "Minecraft Regular", sans-serif;
+  font-size: 18px;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+.minecraft-p2 {
+  font-family: "Minecraft Regular", sans-serif;
+  font-size: 10px;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
 }

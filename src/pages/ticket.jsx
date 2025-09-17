@@ -26,7 +26,7 @@ const Ticket = () => {
     }, []);
 
     return (
-        <div className="default-bg"
+        <div className="default-bg1"
         >
        <h1 className="reason-title">"i will give you look to the ticket soon!"</h1>  
        <PixelButton

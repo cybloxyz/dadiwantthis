@@ -47,6 +47,21 @@
   gap: 20px;
 }
 
+.default-bg1 {
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #cddafd,
+    #d2deff,
+    #ffc1d8,
+    #ffc8dd,
+    #ffc8dd,
+    #cdb4db
+  );
+  display: block;
+  gap: 20px;
+}
+
 .button {
   image-rendering: pixelated;
   image-rendering: crisp-edges; /* untuk kompatibilitas browser */
