@@ -28,7 +28,7 @@ const Passport = () => {
     return (
         <div className="default-bg1"
         >
-            <h1 className="reason-title">"i will give you look to the passport soon!"</h1>  
+            <h1 className="reason-title">"new information, i don't need this dad!"</h1>  
            <PixelButton
             label="look other"
             onClick={() => navigate("/")}

@@ -31,6 +31,7 @@ const Expenses = () => {
           <h1 className="minecraft-text">
             Expenses Details
           </h1>
+        
 
           <div className="sm:col-span-5 col-span-6 sm:row-span-2 row-span-2 bg-white/80 sm:rounded-3xl rounded-2xl border backdrop-blur-lg img-hover">
             <h2 className="minecraft-p sm:px-8 pt-8 pb-2 p-3 pt-3 pb-1">
@@ -82,7 +83,10 @@ const Expenses = () => {
               Notes:
             </h2>
              <h3 className="minecraft-p2 sm:px-8 pt-1 px-3 pt-1">
-              Stipends Expectation [Rp.300.000-]
+              Stipends Expectation [Rp.350.000-] *still wish it
+            </h3>
+             <h3 className="minecraft-p2 sm:px-8 pt-1 px-3 pt-1">
+              My own Money [Rp.150.000-]
             </h3>
           </div>
 
@@ -91,18 +95,25 @@ const Expenses = () => {
               Total [Rp.000-]
             </h3>
             <h3 className="minecraft-p2 sm:px-8 pt-1 px-3 pt-1">
-              - Stipends Expectation [-- Rp.300.000-]
+              - Stipends Expectation [-- Rp.350.000-] *i don't know it is real or not
+              
+            </h3>
+            <h3 className="minecraft-p2 sm:px-8 pt-1 px-3 pt-1">
+              - My own Money [-- Rp.150.000-] *i'll use my own money for unimportant things
             </h3>
              
             <h2 className="minecraft-p sm:px-8 pt-8 pb-2 p-3 pt-3 pb-1">
-              Final Total [Rp.000-]
+              Final Total [Rp.600.000-] |
+              Total + Flight [Rp.3.100.000-]
             </h2>
           </div>
 
         </div>
 
          
- 
+          <h3 className="minecraft-p2 sm:px-8 pt-1 px-3 pt-1">
+            sorry dad..
+          </h3>
 
         <PixelButton
           label="look other"

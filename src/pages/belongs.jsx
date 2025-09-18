@@ -5,6 +5,7 @@ import money from "../assets/images/money.png";
 import glasses from "../assets/images/glasses.png";
 import head from "../assets/images/headphones.png";
 import watch from "../assets/images/watch.png";
+import Usb from "../assets/images/usb.png";
 import pixsong from "../assets/sounds/pixsong.mp3";
 import "../../Minecraft_Regular/stylesheet.css";
 import PixelCarr from "../assets/components/carr";
@@ -12,13 +13,18 @@ import { useNavigate, Link } from "react-router-dom";
 import "../please.css";
 
 const Belongs = () => {
-  const fullText1 = "this is what i need to go there!";
+  const fullText1 = "this is what i need to go there! (few things)";
   const fullText2 = "i have some but dont have some other";
   const images = [
   {
     src: money,
     description: `umm.. of course this is very important
     (i do not have this)`
+  },
+  {
+    src: Usb,
+    description: `umm.. i have this, but full
+    (yours look more interesting)`
   },
   {
     src: glasses,
@@ -28,12 +34,12 @@ const Belongs = () => {
   {
     src: head,
     description: `to reduce noise
-(i do not have this)`
+(mine is broken, separated 2!)`
   },
   {
     src: watch,
     description: `so I will not forget time
-    (i do not have this)`
+    (it's not too important)`
   }
 ];
 
