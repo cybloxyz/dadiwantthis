@@ -15,3 +15,7 @@ To make it possible (joining daydream), I first had to convince my father to all
 
 as the journal begins, The main struggle was convincing my father to let me travel alone. On the technical side, I faced difficulties making the website work properly, such as layout problems, responsive design for different devices, and integrating interactive features. I learned the importance of problem-solving, persistence, and careful planning. 
 making this project is challenging for me, i am just started learn to make website few weeks ago and this is my first website, I also improved my skills in web development, communication, and presenting ideas clearly.
+
+# last thing
+
+btw you guys could edit this and make it for anything, such confessions or maybe ask your parent about something too
