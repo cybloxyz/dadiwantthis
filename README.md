@@ -3,8 +3,11 @@
 i am not forcing my dad to buy me things, i just trying to ask in nice (and creative) way! 
 so i need to go to daydream hackathon in jakarta, but my dad said "no you can't! that is too far for girl like you!"
 
-little knowledge:
+# little knowledge:
+
 My project is related to the Daydream event, a hackathon. I participated to experience my first hackathon and create something meaningful in a collaborative, fast-paced environment. Part of my project involved making a website to showcase my ideas and solutions during the event.
+
+if you ask my reason, it is simple
 
 the reason why i made this project is, I was inspired to join Daydream after receiving a brochure in my email. I really wanted to participate to gain experience, learn new skills, and meet other creative people, even though traveling alone was difficult and costly.
 
