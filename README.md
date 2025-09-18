@@ -19,3 +19,5 @@ making this project is challenging for me, i am just started learn to make websi
 # last thing
 
 btw you guys could edit this and make it for anything, such confessions or maybe ask your parent about something too
+
+[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
