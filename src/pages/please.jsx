@@ -66,58 +66,69 @@ const Dadplease = () => {
   };
 
   useEffect(() => {
-      const alreadyFinished = localStorage.getItem("textFinished");
+  const alreadyFinished = localStorage.getItem("textFinished");
 
   if (alreadyFinished) {
     setText(fullText);
     setShowButton(true);
     return; // jangan jalanin interval lagi
   }
-    // ====== Background Music ======
-    const bgAudio = new Audio(pixsong);
-    bgAudio.volume = 0.5;
-    bgAudio.loop = true;
-    bgAudio.muted = false;
-    bgAudio
-      .play()
-      .then(() => {
-        bgAudio.muted = false;
-      })
-      .catch(() => {
-        console.log("Autoplay diblokir di browser ini");
-      });
-     
-      
-    // ====== Typing Sound ======
-    const typingSounds = [];
-    for (let j = 0; j < 2; j++) {
-      const audio = new Audio(typingSound);
-      audio.volume = 0.3;
-      typingSounds.push(audio);
-    }
 
-    let soundIndex = 0;
-    let i = 0;
-    const interval = setInterval(() => {
-      setText(fullText.slice(0, i + 1));
-      const sound = typingSounds[soundIndex];
-      sound.currentTime = 0;
-      sound.play().catch(() => {});
-      soundIndex = (soundIndex + 1) % typingSounds.length;
+  // ====== Background Music ======
+  const bgAudio = new Audio(pixsong);
+  bgAudio.volume = 0.5;
+  bgAudio.loop = true;
+  bgAudio.muted = false;
+  bgAudio
+    .play()
+    .then(() => {
+      bgAudio.muted = false;
+    })
+    .catch(() => {
+      console.log("Autoplay diblokir di browser ini");
+    });
 
-      i++;
-      if (i === fullText.length) {
-        clearInterval(interval);
-        setShowButton(true);
-        localStorage.setItem("textFinished", "true");
-      }
-    }, 80);
+  // ====== Typing Sound ======
+  const typingSounds = [];
+  for (let j = 0; j < 2; j++) {
+    const audio = new Audio(typingSound);
+    audio.volume = 0.3;
+    typingSounds.push(audio);
+  }
 
-    return () => {
+  let soundIndex = 0;
+  let i = 0;
+  const interval = setInterval(() => {
+    setText(fullText.slice(0, i + 1));
+    const sound = typingSounds[soundIndex];
+    sound.currentTime = 0;
+    sound.play().catch(() => {});
+    soundIndex = (soundIndex + 1) % typingSounds.length;
+
+    i++;
+    if (i === fullText.length) {
       clearInterval(interval);
-      bgAudio.pause();
-    };
-  }, []);
+      setShowButton(true);
+      localStorage.setItem("textFinished", "true");
+    }
+  }, 80);
+
+  // bersih2 saat unmount
+  return () => {
+    clearInterval(interval);
+    bgAudio.pause();
+  };
+}, []);
+
+// reset localStorage hanya saat reload browser
+useEffect(() => {
+  const handleReload = () => {
+    localStorage.removeItem("textFinished");
+  };
+  window.addEventListener("beforeunload", handleReload);
+  return () => window.removeEventListener("beforeunload", handleReload);
+}, []);
+
 
   return (
     <div
